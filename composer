@@ -1,0 +1,25 @@
+curl https://getcomposer.org/installer -o /tmp/composer-setup.php 
+sudo php /tmp/composer-setup.php install --install-dir=/usr/local/bin --filename=composer 
+composer 
+cd ~
+
+mkdir application 
+cd ~/application 
+composer create-project laravel/laravel . 
+composer req laravel/ui 
+composer req laravelcollective/html 
+composer req livewire/livewire 
+php artisan ui bootstrap --auth 
+cd resources/views 
+mkdir pages partials dashboard 
+
+cd ~
+
+wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-languages.tar.gz
+
+tar -zxf phpMyAdmin-5.2.1-all-languages.tar.gz 
+
+sudo mv phpMyAdmin-5.2.1-all-languages /usr/share/phpmyadmin 
+
+cd /usr/share/phpmyadmin
+mkdir /usr/share/phpmyadmin/tmp
