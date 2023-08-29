@@ -1,6 +1,8 @@
 sudo apt-get update 
 sudo apt-get install -y \
 tree \
+atop \
+git \
 zip \
 unzip \
 php8.1-fpm \
