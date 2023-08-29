@@ -22,4 +22,10 @@ tar -zxf phpMyAdmin-5.2.1-all-languages.tar.gz
 sudo mv phpMyAdmin-5.2.1-all-languages /usr/share/phpmyadmin 
 
 cd /usr/share/phpmyadmin
-mkdir /usr/share/phpmyadmin/tmp
+mkdir /usr/share/phpmyadmin/tmp 
+chmod -R 775 /usr/share/phpmyadmin/tmp
+
+cd ~
+sudo touch /etc/nginx/sites-available/application
+sudo chown -R $USER:$USER /etc/nginx/sites-available/application 
+cd ~
