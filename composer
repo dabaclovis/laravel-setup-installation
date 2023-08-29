@@ -19,6 +19,8 @@ wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-language
 
 tar -zxf phpMyAdmin-5.2.1-all-languages.tar.gz 
 
+rm -rf phpMyAdmin-5.2.1-all-languages.tar.gz 
+
 sudo mv phpMyAdmin-5.2.1-all-languages /usr/share/phpmyadmin 
 
 cd /usr/share/phpmyadmin
